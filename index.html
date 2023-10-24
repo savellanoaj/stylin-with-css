@@ -19,8 +19,41 @@
         padding: 1%;
       }
       
+      .page-header{
+        background-color: rgb(250, 143, 250);
+        text-align: center;
+        font-family:'Inknut Antiqua',serif;
+        text-shadow: 4px 4px 4px #aaa;
+      }
+
+        /* start nav rules */
+        nav{
+          text-align:center; /* centers the nav */
+        }
+
+
+        nav a{
+          color:#000; /* font color is black */
+        }
+
+
+        nav ul {
+          list-style:none; /* removes the bullets */
+        }
+        nav li
+        {
+          display:inline-block; /* makes <li> horizontal, but able to declare margins */
+          margin:0 2%; /* margin left-right, gets smaller as necessary */
+        }
+        nav a:hover{
+          text-decoration: none; /* default underline goes away on hover */
+        }
+        /* end nav rules */
+
+
       footer{
         text-align: center;
+        clear:both;
       }
 
 
@@ -69,7 +102,16 @@
     </style>
   </head>
   <body>
-    <h1>Stylin' with CSS</h1>
+    <h1 class="page-header">Stylin' with CSS</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+      </ul>
+    </nav>
     <p>Clever content goes here</p>
     <p>Clever content goes here</p>
     <p>Clever content goes here</p>
